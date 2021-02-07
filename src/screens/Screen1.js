@@ -1,13 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 
-export default () => {
+export default (props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>helloFriend</Text>
       <TouchableOpacity
         style={styles.button1}
-        onPress={() => alert('helloFriend')}
+        onPress={() => props.fun1()}
       >
         <Text style={styles.textButton}>Send Ping</Text>
       </TouchableOpacity>

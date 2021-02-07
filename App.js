@@ -24,12 +24,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Screen1 from './src/screens/Screen1';
+import HandlerScreen1 from './src/components/HandlerScreen1'
 
 // const App: () => React$Node = () => {
 export default () => {
   return (
     <>
-      <Screen1 />
+      <HandlerScreen1 />
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
