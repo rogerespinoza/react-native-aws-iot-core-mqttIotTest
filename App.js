@@ -23,11 +23,14 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Screen1 from './src/screens/Screen1';
 
-const App: () => React$Node = () => {
+// const App: () => React$Node = () => {
+export default () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <Screen1 />
+      {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -67,7 +70,7 @@ const App: () => React$Node = () => {
             <LearnMoreLinks />
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </SafeAreaView> */}
     </>
   );
 };
@@ -111,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+// export default App;
