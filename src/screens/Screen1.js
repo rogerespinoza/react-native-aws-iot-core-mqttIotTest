@@ -3,11 +3,17 @@ import { View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 
 export default (props) => {
   return (
-    <View style={styles.container}>
+    <View style={{...styles.container, backgroundColor: props.backgroundColor}}>
       <Text style={styles.text}>helloFriend</Text>
       <TouchableOpacity
-        style={styles.button1}
+        style={{...styles.button1, backgroundColor: '#a0d'}}
         onPress={() => props.fun1()}
+      >
+        <Text style={styles.textButton}>Send Ping</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={{...styles.button1, backgroundColor: '#0df'}}
+        onPress={() => props.fun2()}
       >
         <Text style={styles.textButton}>Send Ping</Text>
       </TouchableOpacity>
