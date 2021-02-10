@@ -1,4 +1,4 @@
-##Test Connection AWS Core Iot
+## Test Connection AWS Core Iot
 
 Application created to test the speed of connection to aws iot core,
 
